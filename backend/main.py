@@ -15,7 +15,7 @@ app = FastAPI(title="CoverMe API", version="1.0.0")
 # CORS - allow Next.js frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://coverme-excuse-generator.vercel.app/"],
+    allow_origins=["https://coverme-excuse-generator.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
